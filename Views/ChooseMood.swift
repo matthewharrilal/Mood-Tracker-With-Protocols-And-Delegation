@@ -54,7 +54,10 @@ class ChooseMood: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier {
             if identifier == "saveMood" {
+                print(emojiLabel.text)
                 self.mood?.mood = emojiLabel.text
+                print(self.mood?.mood)
+                
             }
         }
     }

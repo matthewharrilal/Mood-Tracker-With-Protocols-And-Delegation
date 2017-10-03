@@ -48,10 +48,8 @@ class DisplayFriendsAndMood: UITableViewController, friendsToTableViewCell, mood
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
         let row = indexPath.row
         let friendsRow = name[row]
-        if cell.userNameLabel.text != nil {
             cell.userNameLabel.text = friendsRow.friend
             cell.moodLabel.text = friendsRow.mood
-        }
         return cell
         
     }

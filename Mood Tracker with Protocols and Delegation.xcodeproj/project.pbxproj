@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CEDA0051F83F2AF005E6FD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEDA0041F83F2AF005E6FD8 /* AppDelegate.swift */; };
+		1CEDA0071F83F2AF005E6FD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEDA0061F83F2AF005E6FD8 /* ViewController.swift */; };
+		1CEDA00A1F83F2AF005E6FD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CEDA0081F83F2AF005E6FD8 /* Main.storyboard */; };
+		1CEDA00C1F83F2AF005E6FD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CEDA00B1F83F2AF005E6FD8 /* Assets.xcassets */; };
+		1CEDA00F1F83F2AF005E6FD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CEDA00D1F83F2AF005E6FD8 /* LaunchScreen.storyboard */; };
+		1CEDA01A1F83F2AF005E6FD8 /* Mood_Tracker_with_Protocols_and_DelegationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEDA0191F83F2AF005E6FD8 /* Mood_Tracker_with_Protocols_and_DelegationTests.swift */; };
+		1CEDA0251F83F2AF005E6FD8 /* Mood_Tracker_with_Protocols_and_DelegationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEDA0241F83F2AF005E6FD8 /* Mood_Tracker_with_Protocols_and_DelegationUITests.swift */; };
+		1CEDA0341F83F7F4005E6FD8 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEDA0331F83F7F4005E6FD8 /* Mood.swift */; };
+		1CEDA0371F83FBBA005E6FD8 /* DisplayFriendsAndMood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEDA0361F83FBBA005E6FD8 /* DisplayFriendsAndMood.swift */; };
+		1CEDA0391F83FBC9005E6FD8 /* AddFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEDA0381F83FBC9005E6FD8 /* AddFriends.swift */; };
+		1CEDA03B1F83FBDA005E6FD8 /* ChooseMood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEDA03A1F83FBDA005E6FD8 /* ChooseMood.swift */; };
+		1CEDA03D1F8400AA005E6FD8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEDA03C1F8400AA005E6FD8 /* TableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CEDA0161F83F2AF005E6FD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CED9FF91F83F2AF005E6FD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CEDA0001F83F2AF005E6FD8;
+			remoteInfo = "Mood Tracker with Protocols and Delegation";
+		};
+		1CEDA0211F83F2AF005E6FD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CED9FF91F83F2AF005E6FD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CEDA0001F83F2AF005E6FD8;
+			remoteInfo = "Mood Tracker with Protocols and Delegation";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CEDA0011F83F2AF005E6FD8 /* Mood Tracker with Protocols and Delegation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mood Tracker with Protocols and Delegation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CEDA0041F83F2AF005E6FD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1CEDA0061F83F2AF005E6FD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1CEDA0091F83F2AF005E6FD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CEDA00B1F83F2AF005E6FD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CEDA00E1F83F2AF005E6FD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1CEDA0101F83F2AF005E6FD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CEDA0151F83F2AF005E6FD8 /* Mood Tracker with Protocols and DelegationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mood Tracker with Protocols and DelegationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CEDA0191F83F2AF005E6FD8 /* Mood_Tracker_with_Protocols_and_DelegationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood_Tracker_with_Protocols_and_DelegationTests.swift; sourceTree = "<group>"; };
+		1CEDA01B1F83F2AF005E6FD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CEDA0201F83F2AF005E6FD8 /* Mood Tracker with Protocols and DelegationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mood Tracker with Protocols and DelegationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CEDA0241F83F2AF005E6FD8 /* Mood_Tracker_with_Protocols_and_DelegationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood_Tracker_with_Protocols_and_DelegationUITests.swift; sourceTree = "<group>"; };
+		1CEDA0261F83F2AF005E6FD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CEDA0331F83F7F4005E6FD8 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
+		1CEDA0361F83FBBA005E6FD8 /* DisplayFriendsAndMood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayFriendsAndMood.swift; sourceTree = "<group>"; };
+		1CEDA0381F83FBC9005E6FD8 /* AddFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriends.swift; sourceTree = "<group>"; };
+		1CEDA03A1F83FBDA005E6FD8 /* ChooseMood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseMood.swift; sourceTree = "<group>"; };
+		1CEDA03C1F8400AA005E6FD8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CED9FFE1F83F2AF005E6FD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CEDA0121F83F2AF005E6FD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CEDA01D1F83F2AF005E6FD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CED9FF81F83F2AF005E6FD8 = {
+			isa = PBXGroup;
+			children = (
+				1CEDA0351F83FB9D005E6FD8 /* Views */,
+				1CEDA0321F83F7E0005E6FD8 /* Model */,
+				1CEDA0031F83F2AF005E6FD8 /* Mood Tracker with Protocols and Delegation */,
+				1CEDA0181F83F2AF005E6FD8 /* Mood Tracker with Protocols and DelegationTests */,
+				1CEDA0231F83F2AF005E6FD8 /* Mood Tracker with Protocols and DelegationUITests */,
+				1CEDA0021F83F2AF005E6FD8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1CEDA0021F83F2AF005E6FD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CEDA0011F83F2AF005E6FD8 /* Mood Tracker with Protocols and Delegation.app */,
+				1CEDA0151F83F2AF005E6FD8 /* Mood Tracker with Protocols and DelegationTests.xctest */,
+				1CEDA0201F83F2AF005E6FD8 /* Mood Tracker with Protocols and DelegationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CEDA0031F83F2AF005E6FD8 /* Mood Tracker with Protocols and Delegation */ = {
+			isa = PBXGroup;
+			children = (
+				1CEDA0041F83F2AF005E6FD8 /* AppDelegate.swift */,
+				1CEDA0061F83F2AF005E6FD8 /* ViewController.swift */,
+				1CEDA0081F83F2AF005E6FD8 /* Main.storyboard */,
+				1CEDA00B1F83F2AF005E6FD8 /* Assets.xcassets */,
+				1CEDA00D1F83F2AF005E6FD8 /* LaunchScreen.storyboard */,
+				1CEDA0101F83F2AF005E6FD8 /* Info.plist */,
+			);
+			path = "Mood Tracker with Protocols and Delegation";
+			sourceTree = "<group>";
+		};
+		1CEDA0181F83F2AF005E6FD8 /* Mood Tracker with Protocols and DelegationTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CEDA0191F83F2AF005E6FD8 /* Mood_Tracker_with_Protocols_and_DelegationTests.swift */,
+				1CEDA01B1F83F2AF005E6FD8 /* Info.plist */,
+			);
+			path = "Mood Tracker with Protocols and DelegationTests";
+			sourceTree = "<group>";
+		};
+		1CEDA0231F83F2AF005E6FD8 /* Mood Tracker with Protocols and DelegationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1CEDA0241F83F2AF005E6FD8 /* Mood_Tracker_with_Protocols_and_DelegationUITests.swift */,
+				1CEDA0261F83F2AF005E6FD8 /* Info.plist */,
+			);
+			path = "Mood Tracker with Protocols and DelegationUITests";
+			sourceTree = "<group>";
+		};
+		1CEDA0321F83F7E0005E6FD8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1CEDA0331F83F7F4005E6FD8 /* Mood.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1CEDA0351F83FB9D005E6FD8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1CEDA0361F83FBBA005E6FD8 /* DisplayFriendsAndMood.swift */,
+				1CEDA0381F83FBC9005E6FD8 /* AddFriends.swift */,
+				1CEDA03A1F83FBDA005E6FD8 /* ChooseMood.swift */,
+				1CEDA03C1F8400AA005E6FD8 /* TableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CEDA0001F83F2AF005E6FD8 /* Mood Tracker with Protocols and Delegation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CEDA0291F83F2AF005E6FD8 /* Build configuration list for PBXNativeTarget "Mood Tracker with Protocols and Delegation" */;
+			buildPhases = (
+				1CED9FFD1F83F2AF005E6FD8 /* Sources */,
+				1CED9FFE1F83F2AF005E6FD8 /* Frameworks */,
+				1CED9FFF1F83F2AF005E6FD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mood Tracker with Protocols and Delegation";
+			productName = "Mood Tracker with Protocols and Delegation";
+			productReference = 1CEDA0011F83F2AF005E6FD8 /* Mood Tracker with Protocols and Delegation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1CEDA0141F83F2AF005E6FD8 /* Mood Tracker with Protocols and DelegationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CEDA02C1F83F2AF005E6FD8 /* Build configuration list for PBXNativeTarget "Mood Tracker with Protocols and DelegationTests" */;
+			buildPhases = (
+				1CEDA0111F83F2AF005E6FD8 /* Sources */,
+				1CEDA0121F83F2AF005E6FD8 /* Frameworks */,
+				1CEDA0131F83F2AF005E6FD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CEDA0171F83F2AF005E6FD8 /* PBXTargetDependency */,
+			);
+			name = "Mood Tracker with Protocols and DelegationTests";
+			productName = "Mood Tracker with Protocols and DelegationTests";
+			productReference = 1CEDA0151F83F2AF005E6FD8 /* Mood Tracker with Protocols and DelegationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1CEDA01F1F83F2AF005E6FD8 /* Mood Tracker with Protocols and DelegationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CEDA02F1F83F2AF005E6FD8 /* Build configuration list for PBXNativeTarget "Mood Tracker with Protocols and DelegationUITests" */;
+			buildPhases = (
+				1CEDA01C1F83F2AF005E6FD8 /* Sources */,
+				1CEDA01D1F83F2AF005E6FD8 /* Frameworks */,
+				1CEDA01E1F83F2AF005E6FD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CEDA0221F83F2AF005E6FD8 /* PBXTargetDependency */,
+			);
+			name = "Mood Tracker with Protocols and DelegationUITests";
+			productName = "Mood Tracker with Protocols and DelegationUITests";
+			productReference = 1CEDA0201F83F2AF005E6FD8 /* Mood Tracker with Protocols and DelegationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CED9FF91F83F2AF005E6FD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Matthew Harrilal";
+				TargetAttributes = {
+					1CEDA0001F83F2AF005E6FD8 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					1CEDA0141F83F2AF005E6FD8 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1CEDA0001F83F2AF005E6FD8;
+					};
+					1CEDA01F1F83F2AF005E6FD8 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1CEDA0001F83F2AF005E6FD8;
+					};
+				};
+			};
+			buildConfigurationList = 1CED9FFC1F83F2AF005E6FD8 /* Build configuration list for PBXProject "Mood Tracker with Protocols and Delegation" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CED9FF81F83F2AF005E6FD8;
+			productRefGroup = 1CEDA0021F83F2AF005E6FD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CEDA0001F83F2AF005E6FD8 /* Mood Tracker with Protocols and Delegation */,
+				1CEDA0141F83F2AF005E6FD8 /* Mood Tracker with Protocols and DelegationTests */,
+				1CEDA01F1F83F2AF005E6FD8 /* Mood Tracker with Protocols and DelegationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CED9FFF1F83F2AF005E6FD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CEDA00F1F83F2AF005E6FD8 /* LaunchScreen.storyboard in Resources */,
+				1CEDA00C1F83F2AF005E6FD8 /* Assets.xcassets in Resources */,
+				1CEDA00A1F83F2AF005E6FD8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CEDA0131F83F2AF005E6FD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CEDA01E1F83F2AF005E6FD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CED9FFD1F83F2AF005E6FD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CEDA0071F83F2AF005E6FD8 /* ViewController.swift in Sources */,
+				1CEDA0391F83FBC9005E6FD8 /* AddFriends.swift in Sources */,
+				1CEDA0371F83FBBA005E6FD8 /* DisplayFriendsAndMood.swift in Sources */,
+				1CEDA03B1F83FBDA005E6FD8 /* ChooseMood.swift in Sources */,
+				1CEDA0341F83F7F4005E6FD8 /* Mood.swift in Sources */,
+				1CEDA03D1F8400AA005E6FD8 /* TableViewCell.swift in Sources */,
+				1CEDA0051F83F2AF005E6FD8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CEDA0111F83F2AF005E6FD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CEDA01A1F83F2AF005E6FD8 /* Mood_Tracker_with_Protocols_and_DelegationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CEDA01C1F83F2AF005E6FD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CEDA0251F83F2AF005E6FD8 /* Mood_Tracker_with_Protocols_and_DelegationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CEDA0171F83F2AF005E6FD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CEDA0001F83F2AF005E6FD8 /* Mood Tracker with Protocols and Delegation */;
+			targetProxy = 1CEDA0161F83F2AF005E6FD8 /* PBXContainerItemProxy */;
+		};
+		1CEDA0221F83F2AF005E6FD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CEDA0001F83F2AF005E6FD8 /* Mood Tracker with Protocols and Delegation */;
+			targetProxy = 1CEDA0211F83F2AF005E6FD8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1CEDA0081F83F2AF005E6FD8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CEDA0091F83F2AF005E6FD8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1CEDA00D1F83F2AF005E6FD8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CEDA00E1F83F2AF005E6FD8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CEDA0271F83F2AF005E6FD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1CEDA0281F83F2AF005E6FD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CEDA02A1F83F2AF005E6FD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mood Tracker with Protocols and Delegation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "m.Mood-Tracker-with-Protocols-and-Delegation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1CEDA02B1F83F2AF005E6FD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mood Tracker with Protocols and Delegation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "m.Mood-Tracker-with-Protocols-and-Delegation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1CEDA02D1F83F2AF005E6FD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mood Tracker with Protocols and DelegationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "m.Mood-Tracker-with-Protocols-and-DelegationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mood Tracker with Protocols and Delegation.app/Mood Tracker with Protocols and Delegation";
+			};
+			name = Debug;
+		};
+		1CEDA02E1F83F2AF005E6FD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mood Tracker with Protocols and DelegationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "m.Mood-Tracker-with-Protocols-and-DelegationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mood Tracker with Protocols and Delegation.app/Mood Tracker with Protocols and Delegation";
+			};
+			name = Release;
+		};
+		1CEDA0301F83F2AF005E6FD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mood Tracker with Protocols and DelegationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "m.Mood-Tracker-with-Protocols-and-DelegationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mood Tracker with Protocols and Delegation";
+			};
+			name = Debug;
+		};
+		1CEDA0311F83F2AF005E6FD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mood Tracker with Protocols and DelegationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "m.Mood-Tracker-with-Protocols-and-DelegationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mood Tracker with Protocols and Delegation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CED9FFC1F83F2AF005E6FD8 /* Build configuration list for PBXProject "Mood Tracker with Protocols and Delegation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CEDA0271F83F2AF005E6FD8 /* Debug */,
+				1CEDA0281F83F2AF005E6FD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CEDA0291F83F2AF005E6FD8 /* Build configuration list for PBXNativeTarget "Mood Tracker with Protocols and Delegation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CEDA02A1F83F2AF005E6FD8 /* Debug */,
+				1CEDA02B1F83F2AF005E6FD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CEDA02C1F83F2AF005E6FD8 /* Build configuration list for PBXNativeTarget "Mood Tracker with Protocols and DelegationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CEDA02D1F83F2AF005E6FD8 /* Debug */,
+				1CEDA02E1F83F2AF005E6FD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CEDA02F1F83F2AF005E6FD8 /* Build configuration list for PBXNativeTarget "Mood Tracker with Protocols and DelegationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CEDA0301F83F2AF005E6FD8 /* Debug */,
+				1CEDA0311F83F2AF005E6FD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CED9FF91F83F2AF005E6FD8 /* Project object */;
+}

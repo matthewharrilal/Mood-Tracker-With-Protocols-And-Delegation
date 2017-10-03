@@ -101,7 +101,7 @@
             </objects>
             <point key="canvasLocation" x="640.79999999999995" y="795.6521739130435"/>
         </scene>
-        <!--Choose Mood-->
+        <!--Title-->
         <scene sceneID="MDt-Jx-Xlk">
             <objects>
                 <viewController id="PFx-dr-aq0" customClass="ChooseMood" customModule="Mood_Tracker_with_Protocols_and_Delegation" customModuleProvider="target" sceneMemberID="viewController">
@@ -124,12 +124,20 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Bag-Tk-mY1"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="2RM-wo-P3k">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="cHH-TU-Nuv">
+                            <connections>
+                                <segue destination="dqc-73-azB" kind="unwind" identifier="saveMood" unwindAction="unwindFromSaveButton:" id="Zwr-tW-xxM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="emojiLabel" destination="qaF-aT-eIT" id="CIK-iD-vUx"/>
                         <outlet property="emojiPickerView" destination="nMm-hS-M2m" id="Lno-eY-Ck7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mNT-wW-zgt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="dqc-73-azB" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1394.4000000000001" y="318.89055472263868"/>
         </scene>

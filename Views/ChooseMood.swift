@@ -11,7 +11,10 @@ import UIKit
 
 class ChooseMood: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
-    var delegate: moodToTableViewCell!
+    var mood: UsersMood?
+    var row: Int?
+    var delegate: moodToTableViewCell?
+    
     
     let moodEmojis = ["Mad Face Grrr😡","Are you serious dude? 😑", "You're awesome!😁"]
     
@@ -43,5 +46,16 @@ class ChooseMood: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         emojiLabel.text = moodEmojis[row]
+       mood?.mood = moodEmojis[row]
+//        delegate?.moodToTableViewCell( UsersMood: self.mood, row: self.row)
+        delegate?.showMood(UsersMood: self.mood!, row: self.row!)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier {
+            if identifier == "saveMood" {
+                self.mood?.mood = emojiLabel.text
+            }
+        }
     }
 }

@@ -60,8 +60,13 @@ class DisplayFriendsAndMood: UITableViewController, friendsToTableViewCell, mood
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier {
             if identifier == "toChooseMood" {
+                let indexPath = tableView.indexPathForSelectedRow!
+                let friend = name[indexPath.row]
                 if let chooseMoodViewController = segue.destination as? ChooseMood {
                     chooseMoodViewController.delegate = self
+                    chooseMoodViewController.row = indexPath.row
+                    chooseMoodViewController.mood = friend
+                    
                 }
             }
             else if identifier == "toAddFriends" {
@@ -76,5 +81,7 @@ class DisplayFriendsAndMood: UITableViewController, friendsToTableViewCell, mood
     @IBAction func unwindToDisplayFriendsAndMood(_ segue: UIStoryboardSegue) {
         
     }
+    
+    @IBAction func unwindFromSaveButton(_ segue: UIStoryboardSegue) {}
     
 }

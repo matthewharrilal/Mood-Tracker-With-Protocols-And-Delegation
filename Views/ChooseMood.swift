@@ -10,6 +10,9 @@ import Foundation
 import UIKit
 
 class ChooseMood: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+    
+    var delegate: moodToTableViewCell!
+    
     let moodEmojis = ["Mad Face Grrr😡","Are you serious dude? 😑", "You're awesome!😁"]
     
     @IBOutlet weak var emojiPickerView: UIPickerView!

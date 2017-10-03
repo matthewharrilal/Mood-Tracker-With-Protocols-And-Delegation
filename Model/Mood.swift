@@ -12,12 +12,12 @@ import UIKit
 
 protocol friendsToTableViewCell {
     // This protocol will essentially serve as the passing of friends back to the table view cells
-    func showFriend(data: String) -> Void
+    func showFriend(UsersMood: UsersMood, row: Int) -> Void
 }
 
 protocol moodToTableViewCell {
     // This protocol will essentially serve to display the mood of the user on the table view cells as well as pass it back to the cells
-    func showMood(data: String) -> Void
+    func showMood(UsersMood: UsersMood, row: Int) -> Void
 }
 
 class UsersMood {

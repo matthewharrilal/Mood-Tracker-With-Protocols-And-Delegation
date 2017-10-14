@@ -20,6 +20,7 @@ class AddFriends: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Hey the view loaded")
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -34,3 +35,8 @@ class AddFriends: UIViewController {
         }
     }
 }
+
+// Three types of casting
+// var number: Int? = 7
+//String(number)
+//

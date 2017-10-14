@@ -12,6 +12,7 @@ import UIKit
 class DisplayFriendsAndMood: UITableViewController, friendsToTableViewCell, moodToTableViewCell {
     
     // The only reason we are creating one array is due to the reason that the only thing we are appending is the name of the friend and when that friend is appended we are only changing their mood
+    // var name = [UsersMood]()
     var name = [UsersMood]() {
         didSet {
             DispatchQueue.main.async {
@@ -48,8 +49,8 @@ class DisplayFriendsAndMood: UITableViewController, friendsToTableViewCell, mood
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
         let row = indexPath.row
         let friendsRow = name[row]
-            cell.userNameLabel.text = friendsRow.friend
-            cell.moodLabel.text = friendsRow.mood
+        cell.userNameLabel.text = friendsRow.friend
+        cell.moodLabel.text = friendsRow.mood
         return cell
         
     }
